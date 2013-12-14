@@ -1,0 +1,13 @@
+/.idea
+target
+.project
+.classpath
+.settings
+*.class
+*.jar
+*.ipr
+*.iml
+*.iws
+*.log
+.checkstyle
+/webapp/src/main/resources/env/dev/contingent/spring/db-connection.properties
