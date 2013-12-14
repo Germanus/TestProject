@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="476963189">
+    <data-source source="LOCAL" name="Data Source" product="HSQL Database Engine" version="2.2.9" jdbc-version="4.0" driver-name="HSQL Database Engine Driver" driver-version="2.2.9" uuid="7d703258-5517-4cd2-b008-caf6a00f918f">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:hsql://localhost/xdb</jdbc-url>
+      <user-name>sa</user-name>
+      <libraries>
+        <library>
+          <url>file://$MAVEN_REPOSITORY$/org/hsqldb/hsqldb/2.2.9/hsqldb-2.2.9.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
