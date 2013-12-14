@@ -48,6 +48,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: javax.faces:jsf-api:2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:3.0-alpha-1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.web:el-impl:2.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.el:el-api:2.2" level="project" />
     <orderEntry type="library" name="Maven: org.primefaces:primefaces:3.5" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish:javax.faces:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2" level="project" />
