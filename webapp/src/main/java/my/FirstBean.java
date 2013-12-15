@@ -25,6 +25,8 @@ public class FirstBean implements Serializable{
     public FirstBean(){
         list.add("ff");
         list.add("fefef");
+        int i = JSFUtil.getBean(Service.class).sum(3,4);
+        int j;
     }
 
     public void addToList(){
