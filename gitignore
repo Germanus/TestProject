@@ -10,4 +10,4 @@ target
 *.iws
 *.log
 .checkstyle
-/webapp/src/main/resources/env/dev/contingent/spring/db-connection.properties
+
