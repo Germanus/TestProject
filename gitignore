@@ -1,0 +1,14 @@
+/.idea
+target
+out
+.project
+.classpath
+.settings
+*.class
+*.jar
+*.ipr
+*.iml
+*.iws
+*.log
+.checkstyle
+
