@@ -11,7 +11,7 @@
     <modules>
         <module>hibernate</module>
         <module>webapp</module>
-        <module>testWebModule</module>
+        <module>spring</module>
     </modules>
 
     <dependencies>
