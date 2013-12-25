@@ -5,6 +5,7 @@ import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -22,7 +23,7 @@ public class Service {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @PersistenceContext
+
     private EntityManager entityManager;
 
 
@@ -31,17 +32,22 @@ public class Service {
         //jdbcTemplate.queryForList();
         return i + j;
     }
-
+    @Transactional
     public void find() {
         User u = entityManager.find(User.class, 1);
         int i = 0;
     }
-
+    @Transactional
     public void insertUser(){
+        //entityManager.getTransaction().begin();
         User user = new User();
         user.setFirstName("IlYa");
         entityManager.persist(user);
+        //entityManager.getTransaction().commit();
 
     }
-
+    @PersistenceContext
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
 }
