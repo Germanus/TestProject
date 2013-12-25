@@ -7,35 +7,6 @@
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
     </servlet>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>
-            /WEB-INF/spring/ctx-*.xml,
-            classpath*:spring/ctx-*.xml
-        </param-value>
-    </context-param>
-
-    <listener>
-        <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
-    </listener>
-
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-
-    <listener>
-        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
-    </listener>
-
-    <context-param>
-        <param-name>webAppRootKey</param-name>
-        <param-value>webapp.root</param-value>
-    </context-param>
-
-=======
->>>>>>> Исправлено
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
@@ -65,13 +36,6 @@
         <param-name>javax.faces.CONFIG_FILES</param-name>
         <param-value>faces-config.xml</param-value>
     </context-param>
-
-<<<<<<< HEAD
-=======
-    <!-- Map these files with JSF -->
->>>>>>> вы
-=======
->>>>>>> Исправлено
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
@@ -80,24 +44,10 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.faces</url-pattern>
     </servlet-mapping>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> вы
-=======
-
->>>>>>> Исправлено
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> вы
-=======
-
->>>>>>> Исправлено
 </web-app>

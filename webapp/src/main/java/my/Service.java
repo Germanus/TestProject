@@ -1,9 +1,13 @@
 package my;
 
 
+import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,10 +22,26 @@ public class Service {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-       public int sum(int i, int j){
+    @PersistenceContext
+    private EntityManager entityManager;
 
-           //jdbcTemplate.queryForList();
-           return i+j;
-       }
+
+    public int sum(int i, int j) {
+
+        //jdbcTemplate.queryForList();
+        return i + j;
+    }
+
+    public void find() {
+        User u = entityManager.find(User.class, 1);
+        int i = 0;
+    }
+
+    public void insertUser(){
+        User user = new User();
+        user.setFirstName("IlYa");
+        entityManager.persist(user);
+
+    }
 
 }

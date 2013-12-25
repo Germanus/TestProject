@@ -17,29 +17,35 @@ import java.util.List;
  */
 @ManagedBean
 @ViewScoped
-public class FirstBean implements Serializable{
+public class FirstBean implements Serializable {
 
     private List<String> list = new ArrayList<String>();
     private int count = 0;
 
-    public FirstBean(){
+    public FirstBean() {
         list.add("ff");
         list.add("fefef");
-        int i = JSFUtil.getBean(Service.class).sum(3,4);
+        int i = JSFUtil.getBean(Service.class).sum(3, 4);
+        JSFUtil.getBean(Service.class).find();
+
         int j;
     }
 
-    public void addToList(){
-
-        list.add("  "+ count++);
+    public void addToList() {
+        list.add("  " + count++);
+        getService().insertUser();
     }
 
-    public void  removeFromList(String str){
+    private Service getService() {
+        return JSFUtil.getBean(Service.class);
+    }
+
+    public void removeFromList(String str) {
         list.remove(str);
 
     }
 
-    public boolean  isFirst(String str){
+    public boolean isFirst(String str) {
         return list.indexOf(str) == 0;
     }
 
